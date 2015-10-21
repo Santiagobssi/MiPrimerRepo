@@ -19,6 +19,18 @@
         
         
         <script src="Javascript/app.js"></script>
+      
+        <!--Uso de herramientas desarrolladas por otras personas de angular-->  
+        <script src="Javascript/angular-ui-router.js"></script>
+        
+        
+        <script src="Javascript/wow.js"></script>
+        
+        <!--Es necesario inicializar WOW-->
+        <script>
+            new WOW().init();
+        </script>
+        
 <!--Para utilizar CSS-->
         <!--se declara los estilos en esta parte-->
        <!-- <style>
@@ -29,24 +41,32 @@
         
         
     </head>
-    <body ng-app='angular' class="animated shake">
+    <body ng-app='angular'>
         <!--ng-app inicializa angular-->
         <!--'angular' es el nombre de nuestra app de la pag app.js-->
         
         <!--<h1 style="color:#FB0000">Mi primera pagina web</h1>
--->        
-        <h1>Ejemplo con angular</h1>
+-->      
+        <div class="animated wow tada">
+        <h1 class="animated shake">Ejemplo con angular</h1>
         <label>Nombre:</label>
             <input type="text" ng-model="yourName" placeholder="Ingresa tu nombre:">
         <hr>
         <h1>Hola {{yourName}}!</h1>
         
+        </div>
         
+        <h1>Router</h1>
+        <p>ui-view</p>
+         <div ui-view></div>
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
         
         
         <h1 style="color:#FB0000" class="center">Mi primera pagina web</h1>
         
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1YNo5v6kgsUPzvdhiYbOqzGfqB5C6axFPLJn3vFCR8rYB0pvY">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1YNo5v6kgsUPzvdhiYbOqzGfqB5C6axFPLJn3vFCR8rYB0pvY" class="animated tada wow">
         
         <h2>Tabla de Calificaciones</h2>
         <table id="tabla1" style="width=100%">
@@ -72,7 +92,7 @@
         
 <!--Para que un texto sea un hipervinculo es necesario que se ponga el texto dentro del tag <a href> -->
         
-        <a href="www.epn.edu.ec" target="_blank"> <!---target _blank se abre en otra pestaña el link-->
+        <a href="epn.edu.ec" target="_blank"> <!---target _blank se abre en otra pestaña el link-->
         <h3>Pagina web Politecnica</h3>
         </a>
         <h4>Titulo 4</h4>
