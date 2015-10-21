@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <title> <!-- revisar la pag w3schools.com tiene ayuda para codigo html-->
+        Santiago Samaniego
+        </title>
+        
+        <!--link sirve para llamar a un archivo css que contenga estilos definidos-->
+        <link rel="stylesheet" href="Estilos/styles.css">
+        <!--cuerpo de angular-->
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <!--funcionalidad especifica de angular-->
+        <script src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
+        
+        
+        <script src="Javascript/app.js"></script>
+<!--Para utilizar CSS-->
+        <!--se declara los estilos en esta parte-->
+       <!-- <style>
+            
+        
+        </style>-->
+<!--con body los cambios en el estilo se hacen en cascada, es decir se aplican los cambios a todos los que no tengan un estilo definido-->                    
+        
+        
+    </head>
+    <body ng-app> <!--ng-app inicializa angular-->
+        <!--<h1 style="color:#FB0000">Mi primera pagina web</h1>
+-->        
+        <h1>Ejemplo con angular</h1>
+        <label>Nombre:</label>
+            <input type="text" ng-model="yourName" placeholder="Ingresa tu nombre:">
+        <hr>
+        <h1>Hola {{yourName}}!</h1>
+        
+        
+        
+        
+        <h1 style="color:#FB0000" class="center">Mi primera pagina web</h1>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1YNo5v6kgsUPzvdhiYbOqzGfqB5C6axFPLJn3vFCR8rYB0pvY">
+        
+        <h2>Tabla de Calificaciones</h2>
+        <table id="tabla1" style="width=100%">
+            <!--Table row-->
+            <tr>
+                <!--Table header-->
+                <th>Estudiante</th>
+                <th>Aplicaciones Libres</th>
+                <th>Tecnologias Web</th>
+                
+            </tr>
+            
+            <tr>
+                <td>Andres Robalino</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+        
+        
+        
+        
+        </table>
+        
+<!--Para que un texto sea un hipervinculo es necesario que se ponga el texto dentro del tag <a href> -->
+        
+        <a href="www.epn.edu.ec" target="_blank"> <!---target _blank se abre en otra pestaña el link-->
+        <h3>Pagina web Politecnica</h3>
+        </a>
+        <h4>Titulo 4</h4>
+        <h5>Titulo 5</h5>
+        <h6>Titulo 6</h6>
+        
+        <h2>Mis materias</h2>
+        <p>Excelente trabajo!</p> <!--Modifica que el texto que vaya dentro se encuentre estéticamente bien en un párrafo-->
+        <pre> <!---->
+        Good
+                job
+                    LOL!
+                    </pre>
+        <ul> <!-- unordered list-->
+            <!-- List item-->
+            <li> Aplicaciones Libres </li>       
+            <li> Tecnologias Web </li>
+            <li> Bases de Datos</li>
+        </ul>
+        
+        <ol type="A"> <!-- ordered list-->
+            <!-- List item-->
+            <li> Aplicaciones Libres </li>       
+            <li> Tecnologias Web </li>
+            <li> Bases de Datos</li>
+            
+            
+        </ol>
+    </body>
+</html>
