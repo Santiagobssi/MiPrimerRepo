@@ -43,28 +43,39 @@ var edad = prompt("Cuál es tu edad?");
 
 //Funciones
 function sumaCubos(a,b){
-  var sum=(a*a*a)+(b*b*b);
-    return sum;
+    return (a*a*a)+(b*b*b);
     
 }
-//console.log("La suma de los cubos a y b es ");
+
  
 
 //arreglo
 var amigos = ["Mayra", "Michelle", "Alanis", "Kelly", "Jeff"];
 
 console.log(amigos);
+
+
 //archivos json
 var datos = {
     nombre:"Santiago",
     apellido:"Samaniego",
     desplegarNombre: function(){
-    console.log(this.nombre+" "+this.apellido)}
+    console.log(datos.nombre+" "+this.apellido);
+        return datos.nombre+" "+this.apellido;
+    }
 }
 
-console.log(datos.nombre);
-console.log(datos.apellido);
-console.log(datos.desplegarNombre);
+function() getValue(){
+var x= document.getElementById("myHeader").innerHTML=datos.desplegarNombre();
 
+}
+
+//innerHTML pasa a ser la parte que va dentro del h1 >< del html
+
+
+//console.log(datos.nombre);
+//console.log(datos.apellido);
+//console.log(datos.desplegarNombre());
+//
 
 
