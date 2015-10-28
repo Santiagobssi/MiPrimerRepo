@@ -39,3 +39,32 @@ console.log("El numero ingresado es 2 o 4");
 //respUsuario
 
 var edad = prompt("Cuál es tu edad?");
+
+
+//Funciones
+function sumaCubos(a,b){
+  var sum=(a*a*a)+(b*b*b);
+    return sum;
+    
+}
+//console.log("La suma de los cubos a y b es ");
+ 
+
+//arreglo
+var amigos = ["Mayra", "Michelle", "Alanis", "Kelly", "Jeff"];
+
+console.log(amigos);
+//archivos json
+var datos = {
+    nombre:"Santiago",
+    apellido:"Samaniego",
+    desplegarNombre: function(){
+    console.log(this.nombre+" "+this.apellido)}
+}
+
+console.log(datos.nombre);
+console.log(datos.apellido);
+console.log(datos.desplegarNombre);
+
+
+
