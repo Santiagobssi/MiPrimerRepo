@@ -9,14 +9,12 @@ module.exports = {
 
   attributes: {
         nombre: {
-        type: 'string',
-        nombre: true
+        type: 'string'
       },
 
         apellido: {
-        type: 'string',
-        apellido: true
-      },
+        type: 'string'
+        },
 
         email: {
         type: 'string',
@@ -25,13 +23,12 @@ module.exports = {
       },
 
         password: {
-        type: 'string',
-        password: true
+        type: 'string'
       },
 
-        tipo_usuario: {
-        type: 'string',
-        tipo_usuario: true
+        tipoUsuario: {
+        type: 'string'
+       
       }
   }
 };
