@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    
+    <body ng-app='Usuarios' ng-controller="Usuario">
+        <div ng-repeat="usuario in usuarios">
+            <!--Poner los atributos que tiene la tabla-->
+            <h1>{{usuario.nombre}}</h1>
+            <p>{{usuario.password}}</p>
+        
+            <!--{{saludo}};-->
+            
+        </div>
+    </body>
+
+
+
+
+
+
+</html>
